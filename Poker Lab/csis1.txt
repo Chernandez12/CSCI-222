@@ -1,0 +1,70 @@
+Trial Number: 1
+Number of hands dealt:         10000
+Number of flushes:             25
+Number of pairs:               4956
+Percent of hands with flushes: %0.25
+Percent of hands with pairs:   %50
+
+Trial Number: 2
+Number of hands dealt:         10000
+Number of flushes:             21
+Number of pairs:               5022
+Percent of hands with flushes: %0.21
+Percent of hands with pairs:   %50
+
+Trial Number: 3
+Number of hands dealt:         10000
+Number of flushes:             24
+Number of pairs:               5022
+Percent of hands with flushes: %0.24
+Percent of hands with pairs:   %50
+
+Trial Number: 4
+Number of hands dealt:         10000
+Number of flushes:             24
+Number of pairs:               4956
+Percent of hands with flushes: %0.24
+Percent of hands with pairs:   %50
+
+Trial Number: 5
+Number of hands dealt:         10000
+Number of flushes:             17
+Number of pairs:               4933
+Percent of hands with flushes: %0.17
+Percent of hands with pairs:   %49
+
+Trial Number: 6
+Number of hands dealt:         10000
+Number of flushes:             11
+Number of pairs:               4915
+Percent of hands with flushes: %0.11
+Percent of hands with pairs:   %49
+
+Trial Number: 7
+Number of hands dealt:         10000
+Number of flushes:             22
+Number of pairs:               5015
+Percent of hands with flushes: %0.22
+Percent of hands with pairs:   %50
+
+Trial Number: 8
+Number of hands dealt:         10000
+Number of flushes:             15
+Number of pairs:               4865
+Percent of hands with flushes: %0.15
+Percent of hands with pairs:   %49
+
+Trial Number: 9
+Number of hands dealt:         10000
+Number of flushes:             24
+Number of pairs:               4941
+Percent of hands with flushes: %0.24
+Percent of hands with pairs:   %49
+
+Trial Number: 10
+Number of hands dealt:         10000
+Number of flushes:             23
+Number of pairs:               4966
+Percent of hands with flushes: %0.23
+Percent of hands with pairs:   %50
+

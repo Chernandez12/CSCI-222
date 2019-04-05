@@ -1,0 +1,339 @@
+1. Array declared with single integer: IntArray a(10);
+
+a[0] = 0
+a[1] = 38464
+a[2] = 1
+a[3] = 1966277368
+a[4] = 32767
+a[5] = 38464
+a[6] = 1
+a[7] = 1966277368
+a[8] = 32767
+a[9] = 38464
+
+2. Array declared with two integers: IntArray b(-3, 6);
+
+b[-3] = -3
+b[-2] = 6
+b[-1] = 10
+b[0] = 0
+b[1] = 38464
+b[2] = 1
+b[3] = 1966277368
+b[4] = 32767
+b[5] = 38464
+b[6] = 1
+
+3. Array declared with two integers: IntArray c(6, 8);
+
+c[6] = 1
+c[7] = 1966277368
+c[8] = 32767
+
+4. Array declared with two identical integers: IntArray d(5, 5);
+
+d[5] = 38464
+
+5. Array declared with no integers: IntArray z;
+
+z[0] = 0
+z[1] = 38464
+z[2] = 1
+z[3] = 1966277368
+z[4] = 32767
+z[5] = 38464
+z[6] = 1
+z[7] = 1966277368
+z[8] = 32767
+z[9] = 38464
+
+6. Array declared with another object of type IntArray: IntArray c(6, 8);
+                                                        Intarray e(c);
+
+c[6] = 1
+c[7] = 1966277368
+c[8] = 32767
+
+e[6] = 1
+e[7] = 1966277368
+e[8] = 32767
+
+7. Array assigned to another array w/ different indices: IntArray f(1, 4);
+                                                         IntArray g(5, 8);
+                                                         f = g;
+
+f[1] = 38464
+f[2] = 1
+f[3] = 1966277368
+f[4] = 32767
+
+g[5] = 61834
+g[6] = 1
+g[7] = 1966277368
+g[8] = 32767
+
+f[5] = 1
+f[6] = 38464
+f[7] = 5
+f[8] = 26114
+
+g[5] = 61834
+g[6] = 1
+g[7] = 1966277368
+g[8] = 32767
+
+8. Multiple array assignment with different indices: IntArray j(3, 6);
+                                                     IntArray k(6, 9);
+                                                     IntArray l(1, 4);
+                                                     j = k = l;
+
+j[3] = 1966277368
+j[4] = 32767
+j[5] = 38464
+j[6] = 1
+
+k[6] = 1
+k[7] = 66520
+k[8] = 1
+k[9] = 1966277368
+
+l[1] = 1962961666
+l[2] = 32767
+l[3] = 1966277368
+l[4] = 32767
+
+j[1] = 1966277368
+j[2] = 32767
+j[3] = 1
+j[4] = 66520
+
+k[1] = 32767
+k[2] = 1966277368
+k[3] = 32767
+k[4] = 1
+
+l[1] = 1962961666
+l[2] = 32767
+l[3] = 1966277368
+l[4] = 32767
+
+9. Overloaded equality operator (identical elements): IntArray m(3, 7);
+                                                      IntArray n(1, 5);
+                                                      m == n
+
+m[3] = 1966277368
+m[4] = 32767
+m[5] = 38464
+m[6] = 1
+m[7] = 1966277368
+
+n[1] = 27906
+n[2] = 1
+n[3] = 1966277368
+n[4] = 32767
+n[5] = 38464
+
+m[1] = 1
+m[2] = 1966277368
+m[3] = 32767
+m[4] = 38464
+m[5] = 1
+
+n[1] = 27906
+n[2] = 1
+n[3] = 1966277368
+n[4] = 32767
+n[5] = 38464
+
+Returns False.
+
+10. Overloaded equality operator (different elements): IntArray o(3, 7);
+                                                       IntArray p(1, 5);
+                                                       o == p
+
+o[3] = 1966277368
+o[4] = 32767
+o[5] = 38464
+o[6] = 1
+o[7] = 1966277368
+
+p[1] = 28418
+p[2] = 0
+p[3] = 1
+p[4] = 5
+p[5] = 5
+
+Returns False.
+
+11. Overloaded equality operator (different size arrays): IntArray q(1, 3);
+                                                          IntArray r(1, 4);
+                                                          q == r;
+
+q[1] = 38464
+q[2] = 1
+q[3] = 1966277368
+
+r[1] = 28930
+r[2] = 0
+r[3] = 1
+r[4] = 5
+
+Returns False.
+
+12. Overloaded inequality operator (identical elements): IntArray s(3, 7);
+                                                         IntArray t(1, 5);
+                                                         s != t;
+
+s[3] = 1966277368
+s[4] = 32767
+s[5] = 38464
+s[6] = 1
+s[7] = 1966277368
+
+t[1] = 29442
+t[2] = 1
+t[3] = 1966277368
+t[4] = 32767
+t[5] = 38464
+
+s[1] = 1
+s[2] = 1966277368
+s[3] = 32767
+s[4] = 38464
+s[5] = 5
+
+t[1] = 29442
+t[2] = 1
+t[3] = 1966277368
+t[4] = 32767
+t[5] = 38464
+
+Returns True.
+
+13. Overloaded inequality operator (different elements): IntArray u(3, 7);
+                                                         IntArray v(1, 5);
+                                                         u != v;
+
+u[3] = 1966277368
+u[4] = 32767
+u[5] = 38464
+u[6] = 1
+u[7] = 1966277368
+
+v[1] = 29954
+v[2] = 0
+v[3] = 1
+v[4] = 5
+v[5] = 5
+
+Returns True.
+
+14. Overloaded inequality operator (different size arrays): IntArray w(1, 3);
+                                           IntArray x(1, 4);
+                                           w != x;
+
+w[1] = 38464
+w[2] = 1
+w[3] = 1966277368
+
+x[1] = 30466
+x[2] = 0
+x[3] = 1
+x[4] = 5
+
+Returns True.
+
+15. Sum of two arrays assigned to third array: IntArray a(1, 5);
+                                               IntArray b(4, 8);
+                                               IntArray c = a + b;
+
+a[1] = 38464
+a[2] = 1
+a[3] = 1966277368
+a[4] = 32767
+a[5] = 38464
+
+b[4] = 0
+b[5] = 0
+b[6] = 0
+b[7] = 1
+b[8] = 4
+
+c[0] = 38464
+c[1] = 1
+c[2] = 1966277368
+c[3] = 32768
+c[4] = 38468
+
+16. Sum of two arrays assigned to first array: IntArray d(10, 13);
+                                               IntArray e(30, 33);
+                                               d += e;
+
+d[10] = 1
+d[11] = 1966277368
+d[12] = 32767
+d[13] = 38464
+
+e[30] = 32767
+e[31] = 38464
+e[32] = 1
+e[33] = 1966277368
+
+d[10] = 2
+d[11] = 1966343888
+d[12] = 32768
+d[13] = 76928
+
+17. Array declared with illegal array bounds: IntArray f(5, 2);
+
+Error: Out of Bounds. Program Halt...
+
+18. Array with index out of range: IntArray g(10);
+                                   g[10] = 1;
+
+g[0] = 0
+g[1] = 38464
+g[2] = 1
+g[3] = 1966277368
+g[4] = 32767
+g[5] = 38464
+g[6] = 1
+g[7] = 1966277368
+g[8] = 32767
+g[9] = 38464
+
+Error: Out of Legal Range. Program Halt...
+
+19. Arrays with length mismatch: IntArray m(1, 4);
+                                 IntArray n(2, 4);
+                                 m = n;
+
+m[1] = 38464
+m[2] = 1
+m[3] = 1966277368
+m[4] = 32767
+
+n[2] = 32767
+n[3] = 1606416288
+n[4] = 32767
+
+Error: Size Mismatch. Program Halt...
+
+m[2] = 32767
+m[3] = 34014
+m[4] = 1
+
+n[2] = 32767
+n[3] = 1606416288
+n[4] = 32767
+
+20. Array subscript operator: IntArray o(7, 8);
+                              o[7] = 25;
+                              o[8] = o[7];
+
+o[7] = 1966277368
+o[8] = 32767
+
+o[7] = 1966277368
+o[8] = 32767
+
